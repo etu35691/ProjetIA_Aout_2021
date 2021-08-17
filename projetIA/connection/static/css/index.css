@@ -1,0 +1,14 @@
+h1{
+    color: rebeccapurple;
+    font-size: 200%
+}
+body{
+    background-image: url("./pictures/background.png");
+    background-repeat: no-repeat;
+    margin-left: auto;
+    text-align: center;
+}
+ul{
+    list-style: none
+}
+

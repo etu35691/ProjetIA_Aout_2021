@@ -1,0 +1,39 @@
+{% load static %} {% csrf_token %}
+
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'game/css/new_game.css' %}">
+    </head>
+    <body>
+        <script>
+            let board = {{board}};
+            let pos1 = {{players.0.position}};
+            let pos2 = {{players.1.position}};
+            let pos = new Array(pos1, pos2);
+            let game_id = "{{game_id}}";
+            let curr_player = {{current_player}};
+            let color1 = "{{players.0.color}}";
+            let color2 = "{{players.1.color}}";
+            let colors = new Array(color1,color2);
+
+        </script>
+        <script src="{% static 'game/move.js' %}"></script>
+        <title>Game</title>
+        <h1>Unfound Name Game</h1>
+        <h3>{{players.0.name}} VS {{players.1.name}}</h3>
+        <p><span id="errors"></span></p>
+        <p><span id="player_to_play">P0 to play</span></p>
+        <table style="margin-left: auto; margin-right: auto">
+
+        </table>
+
+        <div id="wrapper">
+            <div id="controls">
+                <button id="bup" class="movements_control" name="bup"><img src="{% static 'game/css/pictures/key_up.png' %}"></button>
+                <button id="bleft" class="movements_control" name="bleft"><img src="{% static 'game/css/pictures/key_left.png' %}"></button>
+                <button id="bright" class="movements_control" name="bright"><img src="{% static 'game/css/pictures/key_right.png' %}"></button>
+                <button id="bdown" class="movements_control" name="bdown"><img src="{% static 'game/css/pictures/key_down.png' %}"></button>
+            </div>
+        </div>
+    </body>
+</html>

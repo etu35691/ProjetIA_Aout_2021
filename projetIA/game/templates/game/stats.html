@@ -1,0 +1,16 @@
+{% load static %}
+<html>
+  <head>
+      <link rel="stylesheet" href="{% static 'game/css/index.css' %}">
+      <link rel="stylesheet" href="{% static 'game/css/bootstrap.css' %} ?{% now 'U' %}">
+
+  </head>
+  <body>
+    <title>Stats</title>
+    <h1>Stats app</h1>
+    <br><br><br><br>
+    <form method="POST" action="/game/stats">
+      {% csrf_token %}
+      {{ form }}
+      <input type="submit"/>
+  </form>

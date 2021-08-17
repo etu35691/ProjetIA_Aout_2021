@@ -1,0 +1,212 @@
+h1{
+    color: rebeccapurple;
+    font-size: 200%
+}
+h3{
+    color: darkcyan
+}
+
+.couleur1{
+    height: 50px;
+    width: 50px;
+    background: blue;
+    padding: 1px;
+}
+.couleur2{
+    height: 50px;
+    width: 50px;
+    background: red;
+    padding: 1px;
+}
+.couleur3{
+    height: 50px;
+    width: 50px;
+    background: gray;
+    padding: 1px;
+}
+.couleur3{
+    height: 50px;
+    width: 50px;
+    background: gray;
+    padding: 1px;
+}
+
+.blue{
+    height: 50px;
+    width: 50px;
+    background: blue;
+    padding: 1px;
+}
+.darkblue{
+    height: 50px;
+    width: 50px;
+    background: darkBlue;
+    padding: 1px;
+}
+
+.cyan{
+    height: 50px;
+    width: 50px;
+    background: cyan;
+    padding: 1px;
+}
+
+.darkcyan{
+    height: 50px;
+    width: 50px;
+    background: darkCyan;
+    padding: 1px;
+}
+
+.green{
+    height: 50px;
+    width: 50px;
+    background: green;
+    padding: 1px;
+}
+
+.darkgreen{
+    height: 50px;
+    width: 50px;
+    background: darkGreen;
+    padding: 1px;
+}
+
+.yellow{
+    height: 50px;
+    width: 50px;
+    background: yellow;
+    padding: 1px;
+}
+
+.orange{
+    height: 50px;
+    width: 50px;
+    background: orange;
+    padding: 1px;
+}
+
+.darkorange{
+    height: 50px;
+    width: 50px;
+    background: darkOrange;
+    padding: 1px;
+}
+
+.red{
+    height: 50px;
+    width: 50px;
+    background: red;
+    padding: 1px;
+}
+
+.darkred{
+    height: 50px;
+    width: 50px;
+    background: darkred;
+    padding: 1px;
+}
+
+.purple{
+    height: 50px;
+    width: 50px;
+    background: purple;
+    padding: 1px;
+}
+
+.black{
+    height: 50px;
+    width: 50px;
+    background: black;
+    padding: 1px;
+}
+
+.salmon{
+    height: 50px;
+    width: 50px;
+    background: salmon;
+    padding: 1px;
+}
+.pink{
+    height: 50px;
+    width: 50px;
+    background: pink;
+    padding: 1px;
+}
+.coral{
+    height: 50px;
+    width: 50px;
+    background: coral;
+    padding: 1px;
+}
+.gold{
+    height: 50px;
+    width: 50px;
+    background: gold;
+    padding: 1px;
+}
+.darkkhaki{
+    height: 50px;
+    width: 50px;
+    background: darkkhaki;
+    padding: 1px;
+}
+.orchid{
+    height: 50px;
+    width: 50px;
+    background: orchid;
+    padding: 1px;
+}
+
+body{
+    background-image: url("./pictures/background.png");
+    background-repeat: no-repeat;
+    margin-left: auto;
+    text-align: center;
+}
+td{
+    padding: 1px;
+    text-align: center
+}
+
+#wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+  
+#controls {
+    display: inline-grid;
+    grid-column-gap: 0;
+    align-self: end;
+}
+  
+.movements_control {
+    border: solid 1px black;  
+    margin: 0;
+    padding: 0;
+}
+
+#player_to_play{
+    font-size: 200%;
+    font-weight: bold;
+}
+  
+#bup {
+    grid-column-start: 2;
+}
+  
+#bleft {
+    grid-column-start: 1;
+}
+  
+#bdown {
+    grid-column-start: 2;
+}
+  
+#bright {
+    grid-column-start: 3;
+}
+img{
+    width: 25px
+}

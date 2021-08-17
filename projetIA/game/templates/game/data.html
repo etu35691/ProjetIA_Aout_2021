@@ -1,0 +1,80 @@
+{% load static %}
+<html>
+  <head>
+      <link rel="stylesheet" href="{% static 'game/css/index.css' %}">
+      <link rel="stylesheet" href="{% static 'game/css/bootstrap.css' %} ?{% now 'U' %}">
+
+      <style>
+        table, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 15px;
+            margin:auto;
+            background-color: #f1f1c1;
+        }
+      </style>
+  </head>
+  <body>
+    <script>
+        let data = {{data}};
+    </script>
+    <title>Stats</title>
+    <h1>Stats app</h1>
+    <h2>{{data.user.username}}</h2>
+    <br>
+    <table>
+        <caption>Here is the data from the user you searched for</caption>
+        <tr>
+            <td>Username</td>
+            <td>{{data.user.username}}</td>
+        </tr>
+        <tr>
+            <td>Number of games</td>
+            <td>{{data.user.nb_games}}</td>
+        </tr>
+        <tr>
+            <td>Number of wins</td>
+            <td>{{data.user.nb_games_wins}}</td>
+        </tr>
+        <tr>
+            <td>Win pourcentage</td>
+            <td>{{data.prc}}%</td>
+        </tr>
+        <tr>
+            <td>Average cell by game</td>
+            <td>{{data.nb_cell_mean}}</td>
+        </tr>
+        <tr>
+            <td>Favourite color</td>
+            <td>{{data.user.color1}}</td>
+        </tr>
+        {%if data.ai.epsilon%}
+        <tr>
+            <td>Epsilon greedy</td>
+            <td>{{data.ai.epsilon}}</td>
+        </tr>
+        <tr>
+            <td>Speed learning</td>
+            <td>{{data.ai.speed_learning}}</td>
+        </tr>
+        <tr>
+            <td>Learning rate</td>
+            <td>{{data.ai.learning_rate}}</td>
+        </tr>
+        <tr>
+            <td>Number of training game</td>
+            <td>{{data.ai.nb_games_training}}</td>
+        </tr>
+        <tr>
+            <td>Number of training wins</td>
+            <td>{{data.ai.nb_games_training_wins}}</td>
+        </tr>
+        <tr>
+            <td>Training win pourcentage</td>
+            <td>{{data.prc2}}%</td>
+        </tr>
+        {%endif %}
+    </table>
+  </form>
+
+  

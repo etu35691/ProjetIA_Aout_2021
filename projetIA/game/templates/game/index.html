@@ -1,0 +1,42 @@
+{% load static %}
+<html>
+  <head>
+      <link rel="stylesheet" href="{% static 'game/css/index.css' %}">
+      <link rel="stylesheet" href="{% static 'game/css/bootstrap.css' %} ?{% now 'U' %}">
+
+  </head>
+  <body>
+    <title>New Game</title>
+    <br><br><br><br>
+    <h1>Welcome in Game</h1>
+    <form method="POST" action="/game/">
+      {% csrf_token %}
+      {{ form }}
+      <input type="submit"/>
+  </form>
+  <br><br><br><br><br><br>
+
+  <div class="team-clean">
+      <div class="container">
+          <div class="intro">
+              <h2 class="text-center">Dev Team </h2>
+          </div>
+          <div class="row people">
+              <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/10422369_1632825616951237_8176457350196386805_n.jpg?_nc_cat=111&_nc_sid=09cbfe&_nc_ohc=wfZba5SGl4oAX_Z2Yc2&_nc_ht=scontent-bru2-1.xx&oh=0f852fdc9f43c3d402f2eadda222dc86&oe=5FA2D026">
+                  <h3 class="name">Lucas Osorio Osorio</h3>
+                  <p class="title">Developper</p>
+              </div>
+              <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/45971461_10217885097782054_954433018406109184_n.jpg?_nc_cat=110&_nc_sid=174925&_nc_ohc=iTqxV2iOtz0AX9EaCsJ&_nc_ht=scontent-bru2-1.xx&oh=ff366965477427f7caeb15ccd4e3774d&oe=5FA30A9E">
+                  <h3 class="name">Florent Hensen</h3>
+                  <p class="title">Developper</p>
+              </div>
+              <div class="col-md-6 col-lg-4 item"><img class="rounded-circle" src="https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/119103513_4376690602401463_2451518358636917720_n.jpg?_nc_cat=106&_nc_sid=09cbfe&_nc_ohc=2WVsEfLI9YsAX9dcMXW&_nc_ht=scontent-bru2-1.xx&oh=93c62788fbed2b02bc884faa05d120b6&oe=5FA3B172">
+                  <h3 class="name">Guillaume Claes</h3>
+                  <p class="title">Developper</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  </body>
+</html>

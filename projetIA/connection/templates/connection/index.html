@@ -1,0 +1,20 @@
+{% load static %}
+
+<html>
+  <head>
+      <link rel="stylesheet" href="{% static 'game/css/index.css' %}">
+  </head>
+
+
+  <body>
+    <title>Connection</title>
+    <h1>Welcome</h1>
+    <form method="POST" action="/connection/">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit"/>
+    </form>
+
+    <a href="signup">Click here to create an account</a>
+  </body>
+</html>
